@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лендинг ИП Ковалева</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Переключатель темы -->
+    <!-- <div class="theme-switcher">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <span class="theme-icon">🌙</span>
+        </label>
+    </div> -->
 
-    <!-- Шапка -->
-    <header>
+    <!-- Шапка с параллакс-эффектом -->
+    <header class="parallax">
         <div class="container">
             <h1>Лендинг для ИП Ковалева</h1>
             <p>Эффективный инструмент для продвижения бизнеса</p>
-            <a href="#about" class="btn">Узнать больше</a>
+            <a href="#offer" class="btn">Заказать звонок</a>
         </div>
     </header>
 
     <!-- Навигация -->
     <nav>
+        <div class="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <ul>
             <li><a href="#about">О проекте</a></li>
             <li><a href="#features">Преимущества</a></li>
-            <li><a href="#process">Процесс создания</a></li>
-            <li><a href="#demo">Демо</a></li>
+            <li><a href="#offer">Спецпредложение</a></li>
+            <li><a href="#benefits">Выгоды</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contacts">Контакты</a></li>
         </ul>
     </nav>
-
+    
     <!-- О проекте -->
     <section id="about">
         <div class="container">
@@ -54,76 +69,132 @@
     <section id="features">
         <div class="container">
             <h2>Преимущества лендинга</h2>
-            <ul>
-                <li>Адаптивный дизайн</li>
-                <li>Быстрая загрузка</li>
-                <li>SEO-оптимизация</li>
-                <li>Высокая конверсия</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Процесс создания -->
-    <section id="process">
-        <div class="container">
-            <h2>Как создавался проект</h2>
-            <p>Исследование, прототипирование, дизайн, разработка, тестирование и запуск – все этапы были тщательно проработаны.</p>
-            <div class="timeline">
-                <div class="step">
-                    <h3>Исследование</h3>
-                    <p>Анализ целевой аудитории и конкурентов.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Идеально отображается на всех устройствах.</p>
                 </div>
-                <div class="step">
-                    <h3>Прототипирование</h3>
-                    <p>Создание макета и структуры сайта.</p>
+                <div class="card">
+                    <h3>Быстрая загрузка</h3>
+                    <p>Оптимизирован для высокой скорости.</p>
                 </div>
-                <div class="step">
-                    <h3>Разработка</h3>
-                    <p>Вёрстка и программирование.</p>
-                </div>
-                <div class="step">
-                    <h3>Тестирование</h3>
-                    <p>Проверка на ошибки и адаптивность.</p>
-                </div>
-                <div class="step">
-                    <h3>Запуск</h3>
-                    <p>Публикация сайта в Интернете.</p>
+                <div class="card">
+                    <h3>SEO-оптимизация</h3>
+                    <p>Помогает занять топовые позиции в поиске.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Демо -->
-    <section id="demo">
+    <!-- Спецпредложение -->
+    <section id="offer" class="parallax parallax1 ">
         <div class="container">
-            <h2>Демо лендинга</h2>
-            <p>Скоро здесь будет размещена демонстрация работы.</p>
-            <div class="demo-placeholder">
-                <img src="placeholder.jpg" alt="Демо лендинга">
-            </div>
-        </div>
-    </section>
-
-    <!-- Контакты -->
-    <section id="contacts">
-        <div class="container">
-            <h2>Свяжитесь с нами</h2>
+            <h2>Специальное предложение!</h2>
+            <p>Только до конца месяца скидка 20% на все услуги!</p>
             <form>
                 <input type="text" placeholder="Ваше имя" required>
-                <input type="email" placeholder="Ваш email" required>
-                <textarea placeholder="Ваше сообщение" required></textarea>
-                <button type="submit">Отправить</button>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <button type="submit">Заказать звонок</button>
             </form>
         </div>
     </section>
+<!-- Выгоды -->
+<section id="benefits">
+    <div class="container">
+        <h2>Почему это выгодно?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Экономия времени</h3>
+                <p>Не нужно разбираться в сложностях — мы все сделаем за вас.</p>
+            </div>
+            <div class="card">
+                <h3>Гарантия качества</h3>
+                <p>Используем передовые технологии для создания эффективного лендинга.</p>
+            </div>
+            <div class="card">
+                <h3>Поддержка</h3>
+                <p>Мы всегда на связи и поможем с любыми вопросами.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Подвал -->
+<!-- FAQ -->
+<section id="faq">
+    <div class="container">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-item">
+            <h3>Как быстро будет готов лендинг?</h3>
+            <p>Средний срок разработки составляет от 7 до 14 дней.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Можно ли вносить изменения после запуска?</h3>
+            <p>Да, мы можем обновлять и улучшать сайт после его публикации.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Будет ли сайт адаптивным?</h3>
+            <p>Конечно! Лендинг корректно отображается на всех устройствах.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами любым удобным способом:</p>
+        <ul>
+            <li><strong>Телефон:</strong> +7 (900) 123-45-67</li>
+            <li><strong>Email:</strong> info@example.com</li>
+            <li><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1</li>
+        </ul>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Отзывы -->
+    <section id="reviews">
+        <div class="container">
+            <h2>Отзывы наших клиентов</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=99103204f677ea9e293b84c4d670f0e5a1a6ad95-12472935-images-thumbs&n=13" alt="Фото клиента">
+                    <p>"Отличный сервис! Рекомендую!"</p>
+                    <p><strong>Иван Иванов</strong></p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=a03f733f4d3122ada1a0e73a81032a85_sr-5686671-images-thumbs&n=13" alt="Фото клиента">
+                    <p>"Быстро и качественно. Спасибо!"</p>
+                    <p><strong>Мария Петрова</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
     <footer>
         <div class="container">
             <p>© 2025 Лендинг для ИП Ковалева. Все права защищены.</p>
-    
+          
         </div>
     </footer>
-
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const burger = document.querySelector(".burger-menu");
+            const navMenu = document.querySelector("nav ul");
+    
+            burger.addEventListener("click", function () {
+                burger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+    
 </body>
 </html>
